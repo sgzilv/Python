@@ -28,8 +28,26 @@ for name in L:
 
 n = 1
 while n < 10:
-    if n > 10
     print(n)
     n = n + 1 
 print('END')
+
+m = 0
+while m < 10:
+    if m > 5:
+        break
+    print(m)
+    m = m + 1
+print('END')
+
+x = 0
+while x < 10:
+    x = x + 1
+    if x % 2 == 0:
+        continue
+    print(x)
+print('END')
+
+
+    
 
