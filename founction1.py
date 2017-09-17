@@ -41,5 +41,17 @@ def add_end(L = []):
     L.append('END')
     return L
 
+def add_end1(L = None):
+    if L is None:
+        L = []
+    L.append('End')
+    return L
+    
 print(add_end())
 print(add_end())
+
+
+print('***end1***')
+print(add_end1())
+print(add_end1())
+
