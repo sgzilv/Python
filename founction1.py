@@ -1,3 +1,4 @@
+#位置参数，必选参数
 def pow(x):
     return x*x
 
@@ -36,7 +37,7 @@ enroll('Wang', 'M', 7)
 enroll('Yang', 'M', age = 8)
 enroll('Zhang', 'F', city = 'Guangzhou')
 
-
+#默认参数的一个坑，默认参数必须指向不变对象。
 def add_end(L = []):
     L.append('END')
     return L
