@@ -43,8 +43,8 @@ def triangles():
     t0 = []
     t1 = [1]
     i = 1
-    while(i <= 10):
-        print(t1)
+    while(1):
+        yield t1
         if(i == 1):
             t0, t1 = t1, [1, 1]
         if(i > 1):
@@ -60,7 +60,7 @@ def triangles():
     
 n = 0
 for t in triangles():
-#    print(t)
+    print(t)
     n = n + 1
     if n == 10:
         break
