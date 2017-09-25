@@ -17,3 +17,8 @@ for ch in 'ABCDE':
 from collections import Iterable
 print(isinstance('abc', Iterable))  # str是否可迭代
 
+print(isinstance(123456, Iterable)) # 整数是否可迭代
+
+for x, y in ([1, 2], [11, 22], [111, 222]):
+    print(x, y)
+
