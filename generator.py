@@ -33,10 +33,10 @@ def feb2(n):
 #print(feb(int(input('请输入n:'))))
 
 #feb1(5)
-s = feb2(5)
+#s = feb2(5)
 #i = 0
 #while(input() == 'y'):
-next(s)
+#next(s)
 #    i = i + 1
 
 def triangles():
