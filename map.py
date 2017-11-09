@@ -58,9 +58,17 @@ def str2float(s):
     i = str2int(L[0])
     print(i)
     print(L[1][::-1])
-    f = (reduce(lambda x, y: x/10 + y, L[1][::-1]))/10
+    f = (reduce(lambda x, y: x/10 + y, map(char2num, L[1][::-1])))/10
     return i + f
 
-print('str2float(\'123.456\') =', str2float('123.456'))
+def str2float1(s):
+    L = s.split('.')
+    s_i = str2int(L[0])
+    print(len(L[1]))
+    s_f = str2int(L[1])/(10**len(L[1]))
+    print(s_f)
+    return s_i + s_f
+    
+print('str2float(\'123.456\') =', str2float1('123.456'))
 
         
