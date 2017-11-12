@@ -1,7 +1,17 @@
 def is_odd(n):
-    return n %2 == 1
-    
-print(list(filter(is_odd, [1, 2, 3, 4, 5, 6, 7, 8, 9])))
+    return n % 2 == 1
+
+ii = filter(is_odd, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(list(ii))
+
+"""
+n = 0    
+while n < 5:
+    n = n + 1
+    print(next(ii))
+print(list(ii))
+"""
+
 
 def not_empty(s):
     return s and s.strip()
@@ -40,7 +50,9 @@ def is_palindrome(n):
 #    if (s[::1] == s[::-1]):
 #        print(s)
 #        return int(s)
-    return str(n) == str(n)[::-1]
+    return str(n) == str(n)[::-1] and n > 10
+    
 
-output = filter(is_palindrome, range(1, 1000))
+output = filter(is_palindrome, range(0, 10000))
 print(list(output))
+
