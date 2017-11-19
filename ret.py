@@ -25,13 +25,23 @@ def count():
         def f():
              return i*i
         fs.append(f)
-        print('fs = ', fs)
+#        print('fs = ', fs)
     return fs
 
 f1, f2, f3 = count()
 print('f1() = ', f1())
 print('f2() = ', f2())
 print('f3() = ', f3())
+print(count())
+
+"""
+Python 会对 序列化类型对象 自动进行 解包操作 例如 
+a = [1，2，3]
+f1,f2,f3 = a
+f1为1
+f2为2
+f3为3
+"""
 
 def count1():
     def f(j):
