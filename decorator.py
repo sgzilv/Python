@@ -19,5 +19,3 @@ def now():
 f = now
 f()
 
-now = log(now)
-now()
