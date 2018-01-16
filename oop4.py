@@ -1,4 +1,10 @@
-<<<<<<< HEAD
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+'a test oop4'
+
+__author__ = 'Jim Liu'
+
 class MyObject(object):
     def __init__(self):
         self.x = 9
@@ -19,19 +25,12 @@ print(getattr(obj, 'y'))
 
 print(getattr(obj, 'z', 404))
 
-=======
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-'a test oop4'
-
-__author__ = 'Jim Liu'
 
 print(type(123))
 print(type([1, 2, 3]))
 
 print(type(None))
->>>>>>> ad61ab0e12a3ffb3c8c26590f0321a55c8cb9884
+
 
 class Student(object):
     count = 0
@@ -39,11 +38,7 @@ class Student(object):
     def __init__(self, name):
         self.name = name
         Student.count += 1
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> ad61ab0e12a3ffb3c8c26590f0321a55c8cb9884
 # 测试:
 if Student.count != 0:
     print('测试失败!')
@@ -57,9 +52,7 @@ else:
             print('测试失败!')
         else:
             print('Students:', Student.count)
-<<<<<<< HEAD
-            print('测试通过!')
-=======
             print('测试通过!')
 
->>>>>>> ad61ab0e12a3ffb3c8c26590f0321a55c8cb9884
+
+
